@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Docs BDCASH</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+    <link rel="icon" type="image/png" href="../assets/img/bdcash.png">
+</head>
+<style>
+    .ItemTitle span{
+        font-size:16px!important;
+        font-weight:bold!important;
+    }
+    h1{
+        font-size:2rem!important;
+    }
+    h2{
+        font-size:1.5rem!important;
+        margin-top:30px!important;
+    }
+    h4{
+        font-size:1rem!important;
+    }
+</style>
+<body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script>
+        new Docute({
+            target: '#docute',
+            title: 'Docs BDCASH - Guide to BDCash Protocol Ecosystem',
+            highlight: ['typescript', 'javascript'],
+            logo: '<img src="https://bdcashprotocol.com/img/logo.png" height="30" style="margin-top:10px">',
+            darkThemeToggler: true,
+            imageZoom: true,
+            nav: [
+                {
+                    title: "Website",
+                    link: "https://bdcashprotocol.com"
+                },
+                {
+                    title: "GitHub",
+                    link: "https://github.com/BdcashProtocol"
+                },
+                {
+                    title: "Community",
+                    link: "https://discord.io/bdcashprotocol"
+                }
+            ],
+            sidebar: [
+                {
+                    title: 'General informations',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Contribute",
+                            link: "/general-info/contribute"
+                        },
+                        {
+                            title: "FAQ",
+                            link: "/general-info/faq"
+                        },
+                        {
+                            title: "Exchanges",
+                            link: "/general-info/exchanges"
+                        },
+                        {
+                            title: "Block explorer",
+                            link: "/general-info/block-explorers"
+                        },
+                        {
+                            title: "Useful links",
+                            link: "/general-info/links"
+                        }
+                    ]
+                }
+				
+				/*,
+                {
+                    title: 'Wallets',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/wallet/start"
+                        },
+                        {
+                            title: "Full node",
+                            link: "/wallet/fullnode"
+                        },
+                        {
+                            title: "Blockchain card",
+                            link: "/wallet/hardware"
+                        },
+                        {
+                            title: "Manent Web",
+                            link: "/wallet/manent-web"
+                        },
+                        {
+                            title: "Manent Mobile",
+                            link: "/wallet/manent-app"
+                        },
+                    ]
+                },
+                {
+                    title: 'Masternodes',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/masternode/start"
+                        },
+                        {
+                            title: "Installazione manuale",
+                            link: "/masternode/manual-installation"
+                        },
+                        {
+                            title: "Servizi di hosting",
+                            link: "/masternode/hosting"
+                        },
+                        {
+                            title: "FAQ",
+                            link: "/masternode/faq"
+                        },
+                    ]
+                },
+                {
+                    title: 'Staking',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/staking/inizio"
+                        },
+                        {
+                            title: "Staking with desktop wallet",
+                            link: "/staking/desktop-wallet"
+                        },
+                        {
+                            title: "Staking on cloud",
+                            link: "/staking/cloud"
+                        },
+                        {
+                            title: "FAQ",
+                            link: "/staking/faq"
+                        },
+                    ]
+                },
+                {
+                    title: 'IdANodes',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/idanode/start"
+                        },
+                        {
+                            title: "Installazione",
+                            link: "/idanode/installation"
+                        },
+                        {
+                            title: "Maintenance",
+                            link: "/idanode/maintenance"
+                        },
+                        {
+                            title: "Block explorer",
+                            link: "/idanode/block-explorer"
+                        },
+                        {
+                            title: "Progressive Data Management",
+                            link: "/idanode/pdm"
+                        },
+                        {
+                            title: "IPFS",
+                            link: "/idanode/ipfs"
+                        },
+                        {
+                            title: "Documenta",
+                            link: "/idanode/documenta"
+                        },
+                        {
+                            title: "Planum",
+                            link: "/idanode/planum"
+                        },
+                        {
+                            title: "Trustlink",
+                            link: "/idanode/trustlink"
+                        },
+                        {
+                            title: "Smart Contracts",
+                            link: "/idanode/smart-contracts"
+                        },
+                        {
+                            title: "Wallet",
+                            link: "/idanode/wallet"
+                        },
+                    ]
+                },
+                {
+                    title: 'Smart Contracts',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/smart-contracts/start"
+                        },
+                        {
+                            title: "Virtual Machine",
+                            link: "/smart-contracts/scrypta-virtual-machine"
+                        },
+                        {
+                            title: "Playground",
+                            link: "/smart-contracts/playground"
+                        },
+                        {
+                            title: "Local development",
+                            link: "/smart-contracts/local-development"
+                        },
+                    ]
+                },
+                {
+                    title: 'Planum',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/planum/start"
+                        },
+                        {
+                            title: "Token emission",
+                            link: "/planum/emission"
+                        },
+                        {
+                            title: "How it works",
+                            link: "/planum/how-it-works"
+                        },
+                        {
+                            title: "Blockchain Card",
+                            link: "/planum/scrypta-card-wallet"
+                        },
+                        {
+                            title: "Management software",
+                            link: "/planum/management-software"
+                        },
+                        {
+                            title: "Point of Sale",
+                            link: "/planum/point-of-sale"
+                        },
+                    ]
+                },
+                {
+                    title: 'Digital Identity',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/id/start"
+                        },
+                        {
+                            title: "General description",
+                            link: "/id/general-description"
+                        },
+                        {
+                            title: "Technical functioning",
+                            link: "/id/technical-functioning"
+                        },
+                        {
+                            title: "Identification platfrom",
+                            link: "/id/identification"
+                        },
+                        {
+                            title: "Scrypta Login",
+                            link: "/id/login-module"
+                        },
+                        {
+                            title: "Card ID",
+                            link: "/id/card"
+                        },
+                    ]
+                },
+                {
+                    title: 'Core',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/core/start"
+                        },
+                        {
+                            title: "Idanode management",
+                            link: "/core/idanode-management"
+                        },
+                        {
+                            title: "Cache management",
+                            link: "/core/cache-management"
+                        },
+                        {
+                            title: "Progressive Data Management",
+                            link: "/core/pdm"
+                        },
+                        {
+                            title: "Encrypt/Decrypt data",
+                            link: "/core/encrypt-decrypt-data"
+                        },
+                        {
+                            title: "Encrypt/Decrypt file",
+                            link: "/core/encrypt-decrypt-file"
+                        },
+                        {
+                            title: "Advanced Wallet (Seedphrase - BIP32/39)",
+                            link: "/core/advanced-management"
+                        },
+                        {
+                            title: "Addresses management",
+                            link: "/core/addresses-management"
+                        },
+                        {
+                            title: "Transactions management",
+                            link: "/core/transactions-management"
+                        },
+                        {
+                            title: "Planum transactions management",
+                            link: "/core/planum"
+                        },
+                        {
+                            title: "Sign/Verify messages",
+                            link: "/core/sign-verify-messages"
+                        },
+                        {
+                            title: "Network peer-to-peer",
+                            link: "/core/p2p-network"
+                        },
+                        {
+                            title: "Smart Contracts interaction",
+                            link: "/core/smart-contracts-interaction"
+                        },
+                    ]
+                },
+                {
+                    title: 'Open Source dApps',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/dapps/start"
+                        },
+                        {
+                            title: "Socialpay",
+                            link: "/dapps/socialpay"
+                        },
+                        {
+                            title: "Electio",
+                            link: "/dapps/electio"
+                        },
+                        {
+                            title: "Faucet",
+                            link: "/dapps/faucet"
+                        },
+                        {
+                            title: "Names",
+                            link: "/dapps/names"
+                        },
+                        {
+                            title: "News",
+                            link: "/dapps/news"
+                        },
+                    ]
+                },
+                {
+                    title: 'Utilities',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduction",
+                            link: "/utilities/start"
+                        },
+                        {
+                            title: "dApp Composer",
+                            link: "/utilities/dapp-composer"
+                        },
+                        {
+                            title: "VueJS dApp Starter",
+                            link: "/utilities/dapp-starter-vuejs"
+                        },
+                        {
+                            title: "React dApp Starter",
+                            link: "/utilities/dapp-starter-react"
+                        },
+                        {
+                            title: "Shamir Backup",
+                            link: "/utilities/shamir-backup"
+                        },
+                        {
+                            title: "Vanity address",
+                            link: "/utilities/vanity-address"
+                        },
+                        {
+                            title: "Network peer-to-peer",
+                            link: "/utilities/p2p-network"
+                        },
+                        {
+                            title: "Blockchain versioning CLI",
+                            link: "/utilities/versioning-cli"
+                        },
+                        {
+                            title: "IPFS",
+                            link: "/utilities/ipfs"
+                        },
+                    ]
+                } */
+            ]
+        })
+    </script>
+</body>
+
+</html>
