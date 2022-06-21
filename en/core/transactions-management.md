@@ -6,11 +6,11 @@ It allows to obtain the list of "unspent" (UTXO) of a specific address. The answ
 
 Usually this method is invoked internally but can be used to check the balance of the address, for example.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let address =  'LLLjx7yV4nhUzSapBAHogb5BdgUR6VCB3o'
 
-let unspent =  await scrypta.listUnspent(address)
+let unspent =  await bdcash.listUnspent(address)
 
 /*
 
@@ -37,13 +37,13 @@ let unspent =  await scrypta.listUnspent(address)
 
 ## sendRawTransaction(rawtransaction)
 
-It allows you to send a "raw transaction" to the Scrypta network. This method accepts as input the hexadecimal representation of the transaction you want to carry out, already signed by the private key of the address. Generally this method is invoked internally. The answer is a TXID (if the raw transaction is valid, `null` if it is invalid).
+It allows you to send a "raw transaction" to the BdcashProtocol network. This method accepts as input the hexadecimal representation of the transaction you want to carry out, already signed by the private key of the address. Generally this method is invoked internally. The answer is a TXID (if the raw transaction is valid, `null` if it is invalid).
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let rawtransaction =  "0100000002c94e2f1b0d71f956c9b9798119c3db3b610deca3951130c090b17ff9946faeb4000000006a473044022026a088d7054742fe490475286b1e9a2f3e29b3e3c02e813715e8d63001bb66ae0220597b57f2c3655b50c356a81448de3e3a3d495acc1094b04006c0307ec2144e7a0121027460a5f721e97f5e241d9767fb1b7fd778892e7c40684b79fcb4420d07d240e0ffffffff6868a7f754e6254b606d5aa5dcebb27ad9810ddf43ace7338f2a52e5280b07cb000000006a473044022015e0a3b5afd19b8b5bf4d22fa5ed2497b684feed45c2fdce6e6c265e547e9ebb02201010ce6bfbcdec45652a7eca48a588fc5e0870bd1d9e029139d5d147aec2e1a40121027460a5f721e97f5e241d9767fb1b7fd778892e7c40684b79fcb4420d07d240e0ffffffff0200e1f505000000001976a914c79cff4d91a84d05cd2ac5a2fea4e87579f7474088ac2018e505000000001976a914c79cff4d91a84d05cd2ac5a2fea4e87579f7474088ac00000000"
 
-let txid =  await scrypta.sendRawTransaction(rawtransaction)
+let txid =  await bdcash.sendRawTransaction(rawtransaction)
 
 
 /*
@@ -59,11 +59,11 @@ let txid =  await scrypta.sendRawTransaction(rawtransaction)
 
 It allows you to decode a raw transaction to reconstruct its original content, i.e. the inputs used and the outputs of the transaction.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let rawtransaction =  "0100000002c94e2f1b0d71f956c9b9798119c3db3b610deca3951130c090b17ff9946faeb4000000006a473044022026a088d7054742fe490475286b1e9a2f3e29b3e3c02e813715e8d63001bb66ae0220597b57f2c3655b50c356a81448de3e3a3d495acc1094b04006c0307ec2144e7a0121027460a5f721e97f5e241d9767fb1b7fd778892e7c40684b79fcb4420d07d240e0ffffffff6868a7f754e6254b606d5aa5dcebb27ad9810ddf43ace7338f2a52e5280b07cb000000006a473044022015e0a3b5afd19b8b5bf4d22fa5ed2497b684feed45c2fdce6e6c265e547e9ebb02201010ce6bfbcdec45652a7eca48a588fc5e0870bd1d9e029139d5d147aec2e1a40121027460a5f721e97f5e241d9767fb1b7fd778892e7c40684b79fcb4420d07d240e0ffffffff0200e1f505000000001976a914c79cff4d91a84d05cd2ac5a2fea4e87579f7474088ac2018e505000000001976a914c79cff4d91a84d05cd2ac5a2fea4e87579f7474088ac00000000"
 
-let txid =  await scrypta.decodeRawTransaction(rawtransaction)
+let txid =  await bdcash.decodeRawTransaction(rawtransaction)
 
 ​
 
@@ -212,18 +212,18 @@ The parameters are described below:
     
 -   **to:** the receiving address.
     
--   **amount:** the amount of Lyra to be sent.
+-   **amount:** the amount of BdcashProtocol to be sent.
     
 -   **metadata:** text string to be written in transaction (maximum 8000 bytes), it is not mandatory.
     
--   **fees:** the amount of fees to use for the transaction, by default they are **0.001 LYRA.**
+-   **fees:** the amount of fees to use for the transaction, by default they are **0.001 BDECO.**
     
 
 ## send(password, to, amount, metadata = '', key = '')
 
-Allows you to send funds to a Lyra address. The method invokes the previous `build` to create the transaction, and the` sendRawTransaction` method to send it. The input parameters are the same as the previous ones, the only difference is that the `key` parameter becomes optional. If not specified, the payload inside the localStorage is used.
+Allows you to send funds to a BdcashProtocol address. The method invokes the previous `build` to create the transaction, and the` sendRawTransaction` method to send it. The input parameters are the same as the previous ones, the only difference is that the `key` parameter becomes optional. If not specified, the payload inside the localStorage is used.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let address =  'LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2'
 
@@ -233,7 +233,7 @@ let amount =  1
 
 let metadata =  ''
 
-let txid = scrypta.send(password, address, amount, metadata)​
+let txid = bdcash.send(password, address, amount, metadata)​
 
 /*
 

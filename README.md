@@ -1,4 +1,4 @@
-# Documentation script BDCash Protocol
+# Documentation script BdcashProtocol  Protocol
 
 <img src="assets/other/bdcash.png">
 

@@ -1,4 +1,4 @@
-# BDCASH Full Node
+# BDECO Full Node
 
 ## Step 1: 
 Set up your server hosting (VPS)
@@ -31,7 +31,7 @@ If any of the above-mentioned commands fail, go back to Step 7 and reinstall ALL
 
 7.3. Get the source code and compile it (This process will take some time, please be patient):
 
-7.4. Create .bdcash directory:
+7.4. Create .bdcashprotocol directory:
 - git clone https://github.com/BdcashProtocol/bdcash-protocol bdcash
 - cd /root/bdcash/
 - . ./autogen.sh
@@ -48,22 +48,22 @@ If any of the above-mentioned commands fail, go back to Step 7 and reinstall ALL
 - .bdcashd
 
 ## Step 3:
-Edit bdcash.conf file & Start the service.
+Edit bdcashprotocol.conf file & Start the service.
 
-8.1. Edit bdcash.conf file:
+8.1. Edit bdcashprotocol.conf file:
 
 Modify the above information:
 - Change YOUR_USER_NAME to a username
 - Change YOUR_PASSWORD to a secure password (random is recommended)
 8.3. Save and exit (CTRL + X).
 
-8.4. Start the BDCash server:
-- nano /root/.bdcash/bdcash.conf
+8.4. Start the BdcashProtocol  server:
+- nano /root/.bdcashprotocol/bdcashprotocol.conf
 - cd /root/bdcash/src/
 - ./bdcashd
 8.5. You can use the following command to get more info
 - ./bdcash-cli getinfo
-8.2: Copy and paste the following into bdcash.conf:
+8.2: Copy and paste the following into bdcashprotocol.conf:
 - rpcuser=YOUR_USER_NAME
 - rpcpassword=YOUR_PASSWORD
 - rpcallowip=127.0.0.1

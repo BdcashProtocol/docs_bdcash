@@ -2,18 +2,18 @@
 
 ## Overview
 
-### BDCash Web wallet
+### BdcashProtocol  Web wallet
 
-[BDCash Web](https://web.bdcashprotocol.com/) is the online version of [Wallet App.](../wallet/wallet-app.md)
+[BdcashProtocol  Web](https://web.bdcashprotocol.com/) is the online version of [Wallet App.](../wallet/wallet-app.md)
 
 ![wallet_web](/assets/walet_web/banner.png)
 
 
 Accessible via browser from [**web.bdcashprotocol.com**](https://web.bdcashprotocol.com/), allows you to perform all the main operations like the mobile version:
-- Sending reception and transfer of funds (both BDCASH and BDCash tokens)
+- Sending reception and transfer of funds (both BDECO and BdcashProtocol  tokens)
 - Archiving files and documents (with and without encryption)
 - Consult portfolio changes with price charts
-- Consult the balance of your BDCash tokens (if any).
+- Consult the balance of your BdcashProtocol  tokens (if any).
 ***
 
 ## Wallet creation and login
@@ -37,7 +37,7 @@ Losing the file and / or password will make it impossible for anyone to access t
 Once access to **Wallet Web** is complete, the dashboard is presented, with all the information from our digital portfolio.
 ![wallet_web](/assets/wallet_web/main.png)
 
-The main window is reserved for the ** BDCASH** price trend graph. In the upper part we have the menu to access all the main functions and the balance of the specific address connected to the **.sid file** with which the access was made.
+The main window is reserved for the ** BDECO** price trend graph. In the upper part we have the menu to access all the main functions and the balance of the specific address connected to the **.sid file** with which the access was made.
 <br>On the right side we find the links to make a backup of the portfolio and to send / receive funds.
 
 ![wallet_web](/assets/wallet_web/up_web.png)

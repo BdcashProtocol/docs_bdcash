@@ -2,9 +2,9 @@
 
 ## Premise
 
-The Scrypta digital identity framework allows the coupling of a Lyra address to one or more digital and / or physical identifiers.
+The BdcashProtocol digital identity framework allows the coupling of a BdcashProtocol address to one or more digital and / or physical identifiers.
 
-Scrypta provides a privacy oriented public *Gateway* that will allow you to interact with identification technology. This *Gateway* can be reached at: [https://me.scrypta.id](https://me.scrypta.id)
+BdcashProtocol provides a privacy oriented public *Gateway* that will allow you to interact with identification technology. This *Gateway* can be reached at: [https://me.bdcashprotocol.id](https://me.bdcashprotocol.id)
 
 Once inside the system with your `.sid` file you can interact with all the available identifiers:
 
@@ -17,7 +17,7 @@ Once inside the system with your `.sid` file you can interact with all the avail
 - Github,
 - Ethereum (ETH address).
 
-For more information on the *.sid* file and the login system in the Scrypta dApps, visit the [Scrypta Browser Extension](../dapps/extension-browser.md) section.
+For more information on the *.sid* file and the login system in the BdcashProtocol dApps, visit the [BdcashProtocol Browser Extension](../dapps/extension-browser.md) section.
 
 ## Digital Identification
 
@@ -78,4 +78,4 @@ To do this, go to the *"My Identity"* window, press the revocation icon relating
 After authenticating by associating the desired providers, it is important to make a backup of the *.sid* file associated with your address, and therefore with your digital identity.
 Basically the *.sid* file will contain new information related to your identity payload.
 
-If you use [Scrypta Browser Extension](https://id.scryptachain.org/), you will need to un-remove the previous *.sid* file (via the "*Forget Identity*" function) and import the new one, even if it belongs to the same blockchain address.
+If you use [BdcashProtocol Browser Extension](https://id.scryptachain.org/), you will need to un-remove the previous *.sid* file (via the "*Forget Identity*" function) and import the new one, even if it belongs to the same blockchain address.

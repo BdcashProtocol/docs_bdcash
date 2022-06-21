@@ -6,9 +6,9 @@
 ***
 ![wallet_app](/assets/wallet_app/wallet_01.jpg)
 
-Make your files immutable with Wallet and always carry your **BDCASH** with you!
+Make your files immutable with Wallet and always carry your **BDECO** with you!
 
-Wallet is the first official app of [BDCash](https://bdcashprotocol.com), developed to interact with the blockchain in a simple, fast and safe way!
+Wallet is the first official app of [BdcashProtocol ](https://bdcashprotocol.com), developed to interact with the blockchain in a simple, fast and safe way!
 
 Wallet is available in both versions [web](https://web.bdcashprotocol.com) and mobile [Android](#)).
 
@@ -23,9 +23,9 @@ Wallet is available in both versions [web](https://web.bdcashprotocol.com) and m
 
 
 ### What you can do with Wallet:
-#### KEEP, SEND AND RECEIVE BDCASH
-Manage your BDCASH coins with Wallet thanks to its **mobile wallet functions** in an easy and fast way. You can send your BDCASH coins simply by scanning a QR Code.
-<br> When you send BDCASH through the app, everything is immediate and verifiable within the blockchain thanks to its **distributed register**.
+#### KEEP, SEND AND RECEIVE BDECO
+Manage your BDECO coins with Wallet thanks to its **mobile wallet functions** in an easy and fast way. You can send your BDECO coins simply by scanning a QR Code.
+<br> When you send BDECO through the app, everything is immediate and verifiable within the blockchain thanks to its **distributed register**.
 
 #### CERTIFY YOUR IMPORTANT FILES OR DOCUMENTS
 With Wallet, thanks to the **time stamp**, you can upload any type of file or document making it legal and evidentiary; respecting national and international standards, combining the simplicity of an app with the technological potential of the **blockchain**.
@@ -33,7 +33,7 @@ With Wallet, thanks to the **time stamp**, you can upload any type of file or do
 #### PROTECT YOUR INVENTIONS
 We thought to help authors of photographic works, poems or novels and digital texts, works of art and crafts, illustrators, graphic designers, designers and software developers, to protect their creations in an **immediate, safe and very low cost way**, against any form of plagiarism, counterfeiting or illegal spread.
 
-#### KEEP YOUR BDCASH AND YOUR FILES SAFE
+#### KEEP YOUR BDECO AND YOUR FILES SAFE
 Wallet offers you several security tools. Your account has double protection thanks to your personal password and the **SID file** system. To guarantee maximum security, this authentication file will be saved locally on your smartphone and will allow you to access your account at any time and from any device.
 
 #### ARE YOU A SECURITY FAN?
@@ -42,7 +42,7 @@ Wallet has thought of you too! If the Sid file and password are not enough, you 
 #### BE THOUGHTLESS
 With Wallet you can recover your account in many ways, even if you lose your device or buy a new one! All you need to do is import your profile by uploading the .sid file, logging scanning your Paper Wallet.
 
-The data and files uploaded on the BDCash blockchain are processed by the infrastructure and reach a very high level of **redundancy and impermeability**, such as to make them in all respects immutable and immune to alterations and falsifications.
+The data and files uploaded on the BdcashProtocol  blockchain are processed by the infrastructure and reach a very high level of **redundancy and impermeability**, such as to make them in all respects immutable and immune to alterations and falsifications.
 
 **You have our full support!**
 
@@ -98,10 +98,10 @@ Select your preferred import method from those listed below:
 Browse the folders of your device, select the .SID file to import and confirm with ** OK **.
 Now you can manage the imported account.
 
-#### READ BDCASH CARD
-Bring a BDCASH CARD closer to your device so that it can read its information through the NFC sensor.
+#### READ BDECO CARD
+Bring a BDECO CARD closer to your device so that it can read its information through the NFC sensor.
 
-To read the BDCASH CARD (hardware NFC card) it is necessary to enable **Near Field Communication** on the mobile device.
+To read the BDECO CARD (hardware NFC card) it is necessary to enable **Near Field Communication** on the mobile device.
 
 #### RESTORE PAPER WALLET
 This function enables the camera of your device so that you can frame and scan the QR Code **"ENCRYPTED WALLET"** present on your PAPER WALLET.
@@ -116,9 +116,9 @@ Make sure to keep it in a safe place!
 <br> <br> You will now be redirected to the **Dashboard**.
 ***
 
-### Receive BDCASH
-You can receive **BDCASH** coins on your **BDCASH Address**.
-You can easily copy your receiving address or create a QR Code which also contains the amount of the amount of BDCASH to be received.
+### Receive BDECO
+You can receive **BDECO** coins on your **BDECO Address**.
+You can easily copy your receiving address or create a QR Code which also contains the amount of the amount of BDECO to be received.
 
 It is also possible to take a screenshot, directly from your device, of the QR code containing the payment request and share it to whoever you want.
 
@@ -149,17 +149,17 @@ Only you are responsible for the uploaded files and data.
 - Choose the document to be consulted by touching the relevant tab
 - The details of the document will be shown.
 
-Clicking **INVALIDATE** it is possible to invalidate the data, this means that it will no longer be possible to access this data from your VAULT screen and that any associated file, retained by NodeSH, will be deleted. In this case the digital signature, the time stamp with hashing and the relative proof of the author remain indelible thanks to the technology of the distributed register of BDCash.
+Clicking **INVALIDATE** it is possible to invalidate the data, this means that it will no longer be possible to access this data from your VAULT screen and that any associated file, retained by NodeSH, will be deleted. In this case the digital signature, the time stamp with hashing and the relative proof of the author remain indelible thanks to the technology of the distributed register of BdcashProtocol .
 
 ### Settings
-- You can choose your preferred currency ** (Preferred Currency) ** to simplify the calculation in functions such as SEND and RECEIVE BDCASH.
+- You can choose your preferred currency ** (Preferred Currency) ** to simplify the calculation in functions such as SEND and RECEIVE BDECO.
 - You can choose the theme between **Light** and **Dark** modes.
 ***
 
 ## Support
 
 #### Contacting Wallet Support
-Wallet app is developed by the BDCash Task Force and approved by [BDCash Protocol](https://bdcashprotocol.com/).
+Wallet app is developed by the BdcashProtocol  Task Force and approved by [BdcashProtocol  Protocol](https://bdcashprotocol.com/).
 
 If you need help, you can contact support through its official channels:
 - Discord: [https://discord.me/bdcashprotocol](https://discord.me/bdcashprotocol)

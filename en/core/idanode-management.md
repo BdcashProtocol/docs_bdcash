@@ -10,9 +10,9 @@ The method returns the complete list of nodes, the answer is an array of the typ
 
 It checks that the node is responding correctly. If not, it sends a `false:` response
 
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
-let node =  await scrypta.checkNode('https://idanodejs01.scryptachain.org')
+let node =  await bdcash.checkNode('https://idanodejs01.scryptachain.org')
 ```
 /*
 
@@ -32,9 +32,9 @@ let node =  await scrypta.checkNode('https://idanodejs01.scryptachain.org')
 It combines the two previous methods by returning the first available node randomly. This node can be used to call specific functions within it.
 
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
-let node =  await scrypta.connectNode()
+let node =  await bdcash.connectNode()
 
 /*
 
@@ -52,7 +52,7 @@ It makes a `POST` call to the first available IdANode, the list of endpoints can
 For example, it can be used in this way to obtain and read the data entered in the blockchain from a specific address:
 
 ```
-let response = await scrypta.post('/read', { address: "LbR8m1kkLSiiTDaEU8sHeeeh1jGbGho8uo" })
+let response = await bdcash.post('/read', { address: "LbR8m1kkLSiiTDaEU8sHeeeh1jGbGho8uo" })
 ```
 
 ## get(endpoint, node = '')
@@ -62,5 +62,5 @@ It makes a `GET` call to the first available IdANode, the list of endpoints can 
 For example, it can be used in this way to obtain and read wallet data.
 
 ```
-let response = await scrypta.get('/wallet/getinfo')
+let response = await bdcash.get('/wallet/getinfo')
 ```

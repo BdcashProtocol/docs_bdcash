@@ -1,4 +1,4 @@
-# Scrypta Card ID
+# BdcashProtocol Card ID
 
 Users' identities are physically represented through a digital file (.sid file) or through cards.
 
@@ -14,6 +14,6 @@ Each card, of any type, is equipped with a progressive identification number and
 
 The cards with QR-Code not having internal electronic chips, are certainly cheaper and require a unique print of the QR-Code assigned to each card. They do not require the development of a mobile APP but of a Web App which allows much shorter realization times.
 
-For more information on Scrypta Cards see the section:
+For more information on BdcashProtocol Cards see the section:
 
-[Scrypta Card Wallet](../planum/scrypta-card-wallet.md)
+[BdcashProtocol Card Wallet](../planum/bdcash-card-wallet.md)

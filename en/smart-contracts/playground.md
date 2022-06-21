@@ -3,7 +3,7 @@
 The playground is the easiest way to start understanding how to interact with Smart Contracts or develop new ones It can be found at this address:
 [https://playground.bdcashprotocol.com](https://playground.bdcashprotocol.com/#/).
 
-To enter the Playground it is necessary to have a Scrypta identity. We recommend using the Wallet Extension, which can be found [here] (/dapps/Wallet).
+To enter the Playground it is necessary to have a BdcashProtocol identity. We recommend using the Wallet Extension, which can be found [here] (/dapps/Wallet).
 
 
 ## Feature overview

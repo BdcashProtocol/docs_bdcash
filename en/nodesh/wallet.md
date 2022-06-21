@@ -1,6 +1,6 @@
 # Wallet
 
-The operations related to the wallet are similar to those of BDCash Core or the Qt-Wallet. In general, you can always invoke the wallet's RPC functions, even if not all calls are specified as endpoints.
+The operations related to the wallet are similar to those of BdcashProtocol  Core or the Qt-Wallet. In general, you can always invoke the wallet's RPC functions, even if not all calls are specified as endpoints.
 
 ## Crypto.ts
 The module responsible for all interfacing operations is located in `src/libs/Crypto.ts`. This module allows you to call any RPC function through the `request` method. There are several other methods that are called internally and that can be analyzed directly. We describe the `request` method, as it is essential in case you want to extend the functionality of the IdANode.
@@ -21,7 +21,7 @@ let address = await wallet.request('getnewaddress')
 ## [POST] /init
 
 This endpoint is used to initialize an address. In strictly blockchain terms, this operation has no particular consequences. An address exists because it is generated (the operation takes place offline) and does not require funds to perform operations related to the signature. However, it may be necessary to "initialize" it, or to make known its existence at a certain moment in time, by sending funds.
-The amount of funds sent is decided upstream, within the _.env_ file. In the ScrANTA IdANodes it amounts to **0.05 LYRA**.
+The amount of funds sent is decided upstream, within the _.env_ file. In the ScrANTA IdANodes it amounts to **0.05 BDECO**.
 
 The call admits only the **address** field and, if funds are actually sent, it will answer with the relative _txid_. The operation could fail if there are not enough funds in the IdANode to send the transaction.
 
@@ -48,9 +48,9 @@ Here is an example of an answer:
 
 It allows you to generate a new address and returns its private key and public key.
 
-_It is not recommended to use this function if the IdANode is public on the Internet. It would be more correct to generate offline or client-side addresses through the BDCash Core library._
+_It is not recommended to use this function if the IdANode is public on the Internet. It would be more correct to generate offline or client-side addresses through the BdcashProtocol  Core library._
 
-The optional **internal** parameter allows you to generate addresses inside the IdANode, i.e. addresses that are saved inside the wallet.dat (the BDCash wallet file).
+The optional **internal** parameter allows you to generate addresses inside the IdANode, i.e. addresses that are saved inside the wallet.dat (the BdcashProtocol  wallet file).
 
 ```
 {

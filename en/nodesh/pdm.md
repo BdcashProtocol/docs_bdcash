@@ -3,9 +3,9 @@
 These endpoints represent the core of the NodeSH functionality.
 The writing and the reading of the information written on the blockchain represent the two key features of the development of any dApp.
 
-The writing of arbitrary data is allowed thanks to the **OP_RETURN**, which allows to insert 8000 bytes of data on any transaction. It is important to note that the outputs marked with OP_RETURN are **non** expendable transactions. In fact, in this case only the fees of **0.001 LYRA** are spent for each transaction, or for every 50 kilobyte.
+The writing of arbitrary data is allowed thanks to the **OP_RETURN**, which allows to insert 8000 bytes of data on any transaction. It is important to note that the outputs marked with OP_RETURN are **non** expendable transactions. In fact, in this case only the fees of **0.001 BDECO** are spent for each transaction, or for every 50 kilobyte.
 
-If the size of the data to be written exceeds 50000 byte, the NodeSH (and Scrypta Core) divides the data into blocks of 49994 bytes and uses the first 3 bytes and the last 3 bytes to create a link between sequential data. The first 3 bytes are tied to the previous transaction and the last 3 to the next one. In this way the NodeSHs are able to reconstruct the written information on multiple transactions.
+If the size of the data to be written exceeds 50000 byte, the NodeSH (and BdcashProtocol Core) divides the data into blocks of 49994 bytes and uses the first 3 bytes and the last 3 bytes to create a link between sequential data. The first 3 bytes are tied to the previous transaction and the last 3 to the next one. In this way the NodeSHs are able to reconstruct the written information on multiple transactions.
 
 ## Types of possible operations to perform
 
@@ -28,7 +28,7 @@ The following is a data structured according to our protocol:
 	"time":1548755949
 }
 ```
-As we have seen in the Scrypta Core documentation, we have 3 different filters:
+As we have seen in the BdcashProtocol Core documentation, we have 3 different filters:
 - **collection:** defines a collection.
 - **refID:** defines a single reference identifier.
 - **protocol:** defines a protocol, usually interpreted by the dApp.
@@ -66,7 +66,7 @@ Here is the list of available parameters:
 - **refID:** the reference id that you want to use to rank the information.
 - **uuid:** the unique identifier assigned by the NodeSH to update a given data.
 
-The answer to the call will be similar to that of writing through Scrypta Core:
+The answer to the call will be similar to that of writing through BdcashProtocol Core:
  ```
  {
 

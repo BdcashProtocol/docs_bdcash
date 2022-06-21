@@ -6,14 +6,14 @@
 - Have your QT wallet installed on your [windows pc](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest)
 
 ### Requirements
--  More than 5000 BDCASH
-- One computer with BigDataCash wallet installed. Make sure the wallet contains the Masternode Collateral of at least 5000 BDCASH.
+-  More than 5000 BDECO
+- One computer with BigDataCash wallet installed. Make sure the wallet contains the Masternode Collateral of at least 5000 BDECO.
 - One VPS.
 - A decent amount of technical knowledge. i.e. Knowing what a VPS is and using basic Linux shell commands.
 -  Patience – enough to follow these instructions properly before asking questions!
 
 ###  Step 1:
-Setup your BDCASH wallet – this will keep your coins safe. Install bigdatacash-qt wallet on Windows or Linux from the official github.
+Setup your BDECO wallet – this will keep your coins safe. Install bigdatacash-qt wallet on Windows or Linux from the official github.
 
 1.1. Load your bdcash-qt wallet and sync.
 
@@ -60,7 +60,7 @@ Wallet set up for masternode
 
 4.2. Click Send Tab
 
-4.3. Send 5000 BDCASH to the address [MASTERNODE_ALIAS_NAME]
+4.3. Send 5000 BDECO to the address [MASTERNODE_ALIAS_NAME]
 
 4.3. Wait for ALL confirmations to complete (See the Transactions tab in wallet for more details).
 

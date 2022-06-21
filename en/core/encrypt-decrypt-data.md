@@ -8,9 +8,9 @@ let string =  'Some super secret'
 
 let password =  'AReallyStrongPassword!!'
 
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
-let encrypted =  await scrypta.cryptData(string, password)
+let encrypted =  await bdcash.cryptData(string, password)
 
 /*
 
@@ -28,9 +28,9 @@ let hex =  'befba636e2212846bf1c15ff4ef9e5a17ac3e6f1ce3935f4639849d44b8c9565'
 
 let password =  'AReallyStrongPassword!!'
 
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
-let decrypted =  await scrypta.decryptData(hex, password)
+let decrypted =  await bdcash.decryptData(hex, password)
 
 /*
 

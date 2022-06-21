@@ -8,11 +8,11 @@ A: The target blocking time is 60 seconds, therefore about 1440 blocks are creat
 
 A: You can download the version for your operating system from Official Github or Website.
 
-**Q: WHAT IS BDCASH PROTOCOL?**
+**Q: WHAT IS BDECO PROTOCOL?**
 
-A: The best decentralization to cash or the BDCASH is a cryptocurrency forked from the pivx code, but which has its own protocol that makes it possible to use our ecosystem to create non-fungible tokens (NFT), Tokens and Dapps at a relatively fee, super low compared to other larger, well-known projects.
+A: The best decentralization to cash or the BDECO is a cryptocurrency forked from the pivx code, but which has its own protocol that makes it possible to use our ecosystem to create non-fungible tokens (NFT), Tokens and Dapps at a relatively fee, super low compared to other larger, well-known projects.
 
-**Q: WHAT DOES BDCASH HAVE THAT OTHER PIVX / DASH CLONES DO NOT HAVE?**
+**Q: WHAT DOES BDECO HAVE THAT OTHER PIVX / DASH CLONES DO NOT HAVE?**
 
 A: NodeSH, Token Creator Platform, IPFS storage and other tools specifically designed for the creation of dApps oriented on archiving and certification processes.
 
@@ -22,7 +22,7 @@ A: Masternode technology is able to instantly validate and confirm transactions 
 
 **Q: WILL  BE LISTED ON EXCHANGE?**
 
-A: You can currently trade BDCASH on Crex24, Bololex, Bitstorage, Exchange-Assets and Bitsails. The team is long-term committed to the stability and integrity of the project. The most important exchanges will be interested in the project only if its technological development has priority and is constant.
+A: You can currently trade BDECO on Crex24, Bololex, Bitstorage, Exchange-Assets and Bitsails. The team is long-term committed to the stability and integrity of the project. The most important exchanges will be interested in the project only if its technological development has priority and is constant.
 
 **Q: WHEN DO THE REWARDS PER BLOCK CHANGE?**
 

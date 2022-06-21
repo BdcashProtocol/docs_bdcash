@@ -1,8 +1,8 @@
-# BDCash Virtual Machine
+# BdcashProtocol  Virtual Machine
 
 ## Abstract
 
-BDCash was born from a fork of PIVX and rests its blockchain foundations directly on the concepts of Bitcoin (being PIVX a fork of Dash, which in turn is a fork of Bitcoin). Consequently, within the BDCash blockchain there is no reference to the concept of Smart Contracts as they are commonly imagined.
+BdcashProtocol  was born from a fork of PIVX and rests its blockchain foundations directly on the concepts of Bitcoin (being PIVX a fork of Dash, which in turn is a fork of Bitcoin). Consequently, within the BdcashProtocol  blockchain there is no reference to the concept of Smart Contracts as they are commonly imagined.
 
 Although we strongly believe that decentralized applications do not largely need Smart Contracts, on the other hand, we realize that there are many other applications that need to work with a highly decentralized and highly scalable logic. That said, we started thinking about the possibility of allowing third party developers to use our "backend" technology, that is the NodeSH, without actually corrupting them or having to act directly inside the source code.
 
@@ -47,7 +47,7 @@ Taking the example of Ethereum, a Smart Contract may eventually "automatically" 
 
 This is because the Ethereum Virtual Machine does not have a real `clock` which is a fundamental characteristic of all electronic * machines * and which allows synchronization by means of a certain * cycle *. In computers, for example, it is calculated in Hertz (GHz) and defines the quantity to perform operations that the computer can perform every second.
 
-Clearly, to extend the concept of *clock* to the blockchain we must abstract from the concept related to computers and think that the *clock* of the VM (i.e. the moment when the machine synchronizes) is the emission of a block, which in the BDCash network is about 1 minute.
+Clearly, to extend the concept of *clock* to the blockchain we must abstract from the concept related to computers and think that the *clock* of the VM (i.e. the moment when the machine synchronizes) is the emission of a block, which in the BdcashProtocol  network is about 1 minute.
 
 This means that we can think of having our Smart Contract execute *at least* one operation every block, that is when a "cycle" has been concluded.
 

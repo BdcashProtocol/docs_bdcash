@@ -9,13 +9,13 @@ Here are the parameters that can be set:
 
 -   **password:** the password to decrypt the identity payload.
     
--   **metadata:** the data to be written, in the form of a string. There is no character limit as multiple transactions are chained. Greater length means greater expenditure of LYRA. It should be emphasized, of course, that chaining a large number of transactions is not recommended as the failure of a single transaction would invalidate the entire data.
+-   **metadata:** the data to be written, in the form of a string. There is no character limit as multiple transactions are chained. Greater length means greater expenditure of BDECO. It should be emphasized, of course, that chaining a large number of transactions is not recommended as the failure of a single transaction would invalidate the entire data.
     
 -   **collection:** a parameter that allows you to catalog data within a collection. Useful for structuring data, this parameter can be used as a filter when reading data from IdANodes.
     
 -   **refID:** a parameter that allows you to give a single reference to the data, a sort of additional ID that you can filter, always from the IdANodes.
     
--   **protocol:**it is another type of filter, it is used to define the protocols and therefore the type of data entered. For example, Scrypta used the ** E: // ** protocols for encrypted data, **I: //** for identity, etc. There is no constraint of any kind in using protocols.
+-   **protocol:**it is another type of filter, it is used to define the protocols and therefore the type of data entered. For example, BdcashProtocol used the ** E: // ** protocols for encrypted data, **I: //** for identity, etc. There is no constraint of any kind in using protocols.
     
 -   **key:** the identity payload to use; if omitted, the localStorage one is used.
     
@@ -70,7 +70,7 @@ This same information can be retrieved and filtered by the IdANode. The example 
 
 Here is the example that produced the result just described:
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 var metadata =  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis risus auctor, eleifend neque sit amet, ultricies nulla. Suspendisse condimentum nisi ut nunc mattis, vel congue velit congue. Aliquam sit amet pharetra tellus. Etiam tellus lacus, pretium vel commodo a, tempor nec ante. Aenean turpis nisi, pulvinar eget vehicula at, dapibus at dui. Cras vitae dictum massa. Sed in orci lorem. Nullam ut mattis lacus. Mauris ut mattis tellus. Donec et posuere lorem, id elementum ligula. Aliquam eu mollis neque, eget venenatis erat. Aenean vestibulum nunc diam, et luctus massa porttitor ac. Morbi tempor eleifend bibendum. Curabitur sed diam leo.'
 
@@ -82,7 +82,7 @@ var refID =  ''
 
 var protocol =  ''
 
-​let written =  await scrypta.write(password, metadata, collection, refID, protocol)
+​let written =  await bdcash.write(password, metadata, collection, refID, protocol)
 ```
 
 ## update(password, metadata, uuid, collection = '', refID = '', protocol = '', key = '')

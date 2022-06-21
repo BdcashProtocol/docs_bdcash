@@ -2,20 +2,20 @@
 
 ## Introduction
 
-Scrypta's identity system is divided into two fundamental components, the first concerns the management of strictly digital identities, that is Lyra addresses; the second concerns the authentication of addresses with external authenticators.
+BdcashProtocol's identity system is divided into two fundamental components, the first concerns the management of strictly digital identities, that is BdcashProtocol addresses; the second concerns the authentication of addresses with external authenticators.
 
 The first component can be handled in various ways, but basically it concerns the .sid files that we mentioned in the _Scrypta Core_ documentation. These identity payloads can be managed through:
 
 - [**ScryptaID Browser Extension**](https://id.scryptachain.org/) (Chrome, Firefox, etc) 
- > [https://github.com/scryptachain/scrypta-id](https://github.com/scryptachain/scrypta-id)
+ > [https://github.com/scryptachain/bdcash-id](https://github.com/scryptachain/bdcash-id)
 - [**Manent Mobile App**](https://manent.app/) (iOS, Android) 
- > [https://github.com/scryptachain/scrypta-manent-app](https://github.com/scryptachain/scrypta-manent-app)
+ > [https://github.com/scryptachain/bdcash-manent-app](https://github.com/scryptachain/bdcash-manent-app)
 - [**Manent Web App**](https://web.manent.app/#/) (Chrome, Firefox, Mobile browser)
-> [https://github.com/scryptachain/scrypta-manent-web](https://github.com/scryptachain/scrypta-manent-web)
+> [https://github.com/scryptachain/bdcash-manent-web](https://github.com/scryptachain/bdcash-manent-web)
 
-The second component can be used through an identity gateway, such as the one that makes Scrypta available through the URL:
+The second component can be used through an identity gateway, such as the one that makes BdcashProtocol available through the URL:
 
-- [**https://me.scrypta.id/**](https://me.scrypta.id/) 
+- [**https://me.bdcashprotocol.id/**](https://me.bdcashprotocol.id/) 
  
 or through other gateways made available by other external parties.
 
@@ -66,14 +66,14 @@ gwMjY0OTE0LDE1NzEzOTAzOTAsOTU0Njc2ODUzXX0=
 
 ## Technical notes
 
-The source code of the Scrypta Identity Framework, which manages the identity gateways, can be inspected at this address:
+The source code of the BdcashProtocol Identity Framework, which manages the identity gateways, can be inspected at this address:
 
-[https://github.com/scryptachain/scrypta-identity-framework](https://github.com/scryptachain/scrypta-identity-framework)
+[https://github.com/scryptachain/bdcash-identity-framework](https://github.com/scryptachain/bdcash-identity-framework)
 
 This is the component that provides interfaces to external authenticators.
 
 
-**Scrypta Identity Framework** is an app developed in [**NodeJS**](https://nodejs.org). 
+**BdcashProtocol Identity Framework** is an app developed in [**NodeJS**](https://nodejs.org). 
 Providers are managed through [**PassportJS**](http://www.passportjs.org/); except for email verification, integrated via [**Mailgun**](https://www.mailgun.com/) and verification of telephone number, via [**Twilio**](https://www.twilio.com/). 
 
 
@@ -84,7 +84,7 @@ Providers are managed through [**PassportJS**](http://www.passportjs.org/); exce
 
 Whenever the user wants to identify himself, he must clearly show his identity payload (operation via mobile app) and the counterparty (always via the app, automatically) will verify that the payloads presented are actually valid. In essence, a verification will be carried out via public key, payload and blockchain.
 
-The result, which can be found on the website https://me.scrypta.id, will be something like this, which we graphically render for privacy reasons:
+The result, which can be found on the website https://me.bdcashprotocol.id, will be something like this, which we graphically render for privacy reasons:
 
 
 ![](/assets/idframework/proof.png)
@@ -123,7 +123,7 @@ Currently the integrated and functioning providers are the following:
 
 The final goal of this framework is to give the possibility to entities, institutions or companies to create their own set of addresses whose identity is guaranteed thanks to the blockchain and the method mentioned above.
 
-Scrypta is implementing this identity system within the Manent mobile app, giving users the chance to exchange identity information and save it within their "Address Book". This will allow for a double operation, the first is to be able to actually have a list of trusted contacts and the second is to create TrustLink with these contacts, so as to be able to sign agreements or sign documents.
+BdcashProtocol is implementing this identity system within the Manent mobile app, giving users the chance to exchange identity information and save it within their "Address Book". This will allow for a double operation, the first is to be able to actually have a list of trusted contacts and the second is to create TrustLink with these contacts, so as to be able to sign agreements or sign documents.
 
 ## Extensibility and practical cases
 

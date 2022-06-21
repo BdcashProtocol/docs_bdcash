@@ -1,7 +1,7 @@
 # Introduction
 
 
-[BDCash](https://github.com/BdcashProtocol/bdcash-nodesh) (Node Secure HyperConnection) it is certainly the most important technology developed by BDCash. It is the heart of all data writing and reading operations, as well as the main data source for dApps.
+[BdcashProtocol ](https://github.com/BdcashProtocol/bdcash-nodesh) (Node Secure HyperConnection) it is certainly the most important technology developed by BdcashProtocol . It is the heart of all data writing and reading operations, as well as the main data source for dApps.
 
 NodeSH is a NodeJS application written in TypeScript with a multitude of features:
 
@@ -13,7 +13,7 @@ NodeSH is a NodeJS application written in TypeScript with a multitude of feature
     
 4.  **IPFS:** it serves as an interface for the distributed file system (InterPlanetary File System), useful for uploading and downloading data.
     
-5.  **Replica:** NodeSH is the main replica of all the information and files uploaded to the BDCash Blockchain.
+5.  **Replica:** NodeSH is the main replica of all the information and files uploaded to the BdcashProtocol  Blockchain.
     
 6.  **Wallet**: it can also work as a "client", it can perform the same operations as the BDCashCore clients, simply by calling APIs and passing the necessary information.
     

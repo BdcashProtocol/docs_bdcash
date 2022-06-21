@@ -5,11 +5,11 @@ It creates an address and save the payload (by default) in the localStorage. If 
 
 Attention: the localStorage is not checked! In case of presence of a previous payload this will be overwritten. Check carefully the backup and write phases of the payloads in your dApp.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let password =  'AStrongPassword'
 
-let payload =  await scrypta.createAddress(password,  false)
+let payload =  await bdcash.createAddress(password,  false)
 
 /*
 
@@ -49,18 +49,18 @@ This method, which is normally invoked internally, is used to build the encrypte
 
 In this case you should proceed as follows:
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let oldpassword =  'WeakPassword'
 
 let newpassword =  'AStrongPassword'
 
-let payload =  await scrypta.readKey(oldpassword)
+let payload =  await bdcash.readKey(oldpassword)
 
 ​
 if(payload !==  false){
 
- scrypta.buildWallet(
+ bdcash.buildWallet(
 
  newpassword, 
 
@@ -88,13 +88,13 @@ The public key and public address are two separate entities. The public address 
 
 ## initAddress(address)
 
-This method initializes the address, which means that an available IdANode sends a minimal amount of LYRA to the initialized address. In the case of IdANode Scrypta the quantity is ** 0.05 LYRA **. The response obtained from the IdANode includes the TXID of the transaction.
+This method initializes the address, which means that an available IdANode sends a minimal amount of BDECO to the initialized address. In the case of IdANode BdcashProtocol the quantity is ** 0.05 BDECO **. The response obtained from the IdANode includes the TXID of the transaction.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let address =  'LLLjx7yV4nhUzSapBAHogb5BdgUR6VCB3o'
 
-let init =  await scrypta.initAddress(address)
+let init =  await bdcash.initAddress(address)
 
 /*
 
@@ -119,11 +119,11 @@ This method allows you to import any private key into the local wallet. It is us
 
 This method allows you to recreate the public key of the address starting from its private key.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let prv =  'SnvpeER7kdeMFGRimBzV5EJfX2ZfxmAQwin1qAHD2kXb8XRF983g'
 
-let key = scrypta.getPublicKey(prv)
+let key = bdcash.getPublicKey(prv)
 
 
 /*
@@ -139,11 +139,11 @@ let key = scrypta.getPublicKey(prv)
 
 This method allows you to recreate an address starting from its public key, useful to verify that the public key is actually corresponding to the address.
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let key =  '03097163386854cde5801aec574948e15b9e24c79da65414d4e5588e7140846165'
 
-let address =  await scrypta.getAddressFromPubKey(key)
+let address =  await bdcash.getAddressFromPubKey(key)
 
 
 /*
@@ -162,10 +162,10 @@ This method allows you to send a specific amount of funds using a private key, i
 The response will be of type `boolean`.
 
 ```
-const scrypta = new ScryptaCore
+const bdcash = new BDCashCore
 
 let prv =  'SnvpeER7kdeMFGRimBzV5EJfX2ZfxmAQwin1qAHD2kXb8XRF983g'
 
-let key = scrypta.fundAddress(prv, 'LSJq6a6AMigCiRHGrby4TuHeGirJw2PL5c', 1)
+let key = bdcash.fundAddress(prv, 'LSJq6a6AMigCiRHGrby4TuHeGirJw2PL5c', 1)
 
 ```

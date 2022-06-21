@@ -8,7 +8,7 @@ Aside from this alphanumeric distinction, multisignature addresses differ mainly
 
 We will see later how multisignature transactions and addresses are generated.
 
-The BDCASH idea, which chose to call these TrustLink addresses, provides that two or more addresses that decide to sign (and therefore write) information on the blockchain are, in some way, addresses that trust each other. In our case, the necessary signatures always correspond to all the addresses present in the TrustLink. We will soon see how to use these particular addresses to sign contracts.
+The BDECO idea, which chose to call these TrustLink addresses, provides that two or more addresses that decide to sign (and therefore write) information on the blockchain are, in some way, addresses that trust each other. In our case, the necessary signatures always correspond to all the addresses present in the TrustLink. We will soon see how to use these particular addresses to sign contracts.
 
 We are talking about *contracts* in very different terms from those usually used. The *contracts* that we mean are written agreements (or files) that are contextually signed by all participants in the Trustlink. In no case will we talk about *smart contracts*, at least not in the sense of *computer program*. The program that executes the contract, in our case, is in all respects the blockchain, through the multiple signature operation.
 
@@ -21,7 +21,7 @@ This endpoint is used to generate the Trustlink starting from the public keys of
 The fields to be sent will be the following:
 
  - **addresses**: the comma separated list containing the public address keys.
- - **airdrop**: it can be *true* or *false* and it is used to send the first initialization transaction of the amount inserted in the * .env * file of the NodeSH. By default it is **0.001 BDCASH**.
+ - **airdrop**: it can be *true* or *false* and it is used to send the first initialization transaction of the amount inserted in the * .env * file of the NodeSH. By default it is **0.001 BDECO**.
 
 The end result will look like this:
 ```
@@ -61,12 +61,12 @@ The operation is similar to that already described, therefore we recommend going
 
 ##  [POST] /trustlink/send
 
-Similar to the **send** endpoint for normal addresses, this endpoint allows funds to be sent from the trustlink to another BDCASH address.
+Similar to the **send** endpoint for normal addresses, this endpoint allows funds to be sent from the trustlink to another BDECO address.
 
 Here is the list of possible fields:
 - **trustlink [mandatory]:** the trustlink that is writing the information.
-- **to [mandatory]**: the Bdcash address that will receive the funds.
-- **amount [mandatory]**: the amount of Bdcash to send.
+- **to [mandatory]**: the BdcashProtocol  address that will receive the funds.
+- **amount [mandatory]**: the amount of BdcashProtocol  to send.
 - **private_keys [mandatory]**: the private keys of the trustlink addresses.
 - **redeemScript [mandatory]**: the same string returned in the trustlink creation operation.
 - **message:** any message to be included in the transaction. It can be a maximum of 80 bytes.

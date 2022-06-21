@@ -1,6 +1,6 @@
 # Introduction
 
-The digital identity within the Scrypta Blockchain is managed through two different components:
+The digital identity within the BdcashProtocol Blockchain is managed through two different components:
 
 1. The "pseudonymous identity" component - an alphanumeric string of the type - *LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt* -  which allows the digital signature to be coupled to a natural or legal person.
 
@@ -10,15 +10,15 @@ The correct identification of the subject leads to the creation of a **identity 
 
 ## Certification and verification
 
-Scrypta ID is the first tool that connects the electronic identity document (CIE) to the blockchain. By creating a specific message that is signed in blockchain and countersigned through the Electronic Identity Card, the user can associate his blockchain address with the credentials issued by the Ministry of the Interior and thus perform certified operations.
+BdcashProtocol ID is the first tool that connects the electronic identity document (CIE) to the blockchain. By creating a specific message that is signed in blockchain and countersigned through the Electronic Identity Card, the user can associate his blockchain address with the credentials issued by the Ministry of the Interior and thus perform certified operations.
 
 Your identity can also be associated with the ownership of various services, such as: your mobile number, your email or PEC, your social networks such as Twitter or Linkedin, or even addresses of other blockchains such as Ethereum.
 
-To use the identity verification tool, go to the identification site: [https://scrypta.id](https://scrypta.id/en).
+To use the identity verification tool, go to the identification site: [https://bdcash.id](https://bdcash.id/en).
 
 ## Gateway
 
-Correct identification can take place through the [verification tool](https://scrypta.id/en) made available by Scrypta, or it can be carried out by means of a **Gateway**: a trusted third party who assumes the responsibility for identification itself.
+Correct identification can take place through the [verification tool](https://bdcash.id/en) made available by BdcashProtocol, or it can be carried out by means of a **Gateway**: a trusted third party who assumes the responsibility for identification itself.
 
 Here we see an **example** of identification:
 
@@ -31,7 +31,7 @@ As you can guess, no personal data is saved within the blockchain, revealing its
 
 The identity payload is also delivered to the user who will keep it within their devices (Card, Mobile, PC) and will be necessary for the processes of exchange of personal information between users, companies, entities.
 
-> By creating their own digital identity, the user can also easily use, even in a pseudonymous form, all the [Scrypta dapps](../dapps/README.md).
+> By creating their own digital identity, the user can also easily use, even in a pseudonymous form, all the [BdcashProtocol dapps](../dapps/README.md).
 
 
 Identities (and their address) can be created through:
@@ -40,4 +40,4 @@ Identities (and their address) can be created through:
 
 - [ScryptaID Browser Extension](../dapps/start.md)
 
-- [Scrypta Card](../wallet/manent-app.md#scrypta-card)
+- [BdcashProtocol Card](../wallet/manent-app.md#bdcash-card)

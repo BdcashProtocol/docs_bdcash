@@ -8,22 +8,22 @@ In order for the NodeSH to work at its best, it is absolutely necessary that the
 The ***install.sh*** script file will install all dependencies for you, we resume the script directly on this page.
 During the installation you will be asked to edit some fields of the .env file, so check that all the parameters are entered correctly, specifically:
 
- - **RPCUSER:** The same value inserted inside the wallet, by default it is "bdcashrpc". It is essential to edit this field both in the `bdcash.conf` and in the `.env`
- - **RPCPASSWORD:** The same value inserted inside the wallet, by default it is "bdcashpassword". It is essential to edit this field both in the `bdcash.conf` and in the `.env`
+ - **RPCUSER:** The same value inserted inside the wallet, by default it is "bdcashrpc". It is essential to edit this field both in the `bdcashprotocol.conf` and in the `.env`
+ - **RPCPASSWORD:** The same value inserted inside the wallet, by default it is "bdcashpassword". It is essential to edit this field both in the `bdcashprotocol.conf` and in the `.env`
  - **RPCPORT:** It must be `42223` and it is already preset
  - **RPCADDRESS:** If the wallet is installed inside the same machine it must be `localhost`. Any IP address of an external machine must be entered.
  - **PATH:** Path pointing to the folder containing the `bdcashd` file
  - **DEBUG**: It is used to work with active debug mode, which we recommend
  - **DB_PORT**: The connection port for MongoDB, by default it is `28015`
  - **DB_HOST**: If the database is installed on the same machine, it must be `localhost`. Any IP address of an external machine must be entered.
- - **COIN**: By default it is `BDCASH`: to be changed for any integration with other blockchains
+ - **COIN**: By default it is `BDECO`: to be changed for any integration with other blockchains
  - **SYNC**: By default it is `true` and is used to activate or deactivate automatic synchronization. It can be disabled for debugging purposes
  - **AIRDROP**: The amount of bdcash that the NodeSH sends each time an address is initialized
  - **SERVERMODE**: Determines whether the system should install a Tray Icon in the topbar to quickly close the NodeSH. By default it is `false`.
  - **TESTNET**: It defines whether the NodeSH is in testnet mode or not, the value can be entered as `true` or` false`.
- - **DATAFOLDER**: Path pointing to the folder containing the Bdcash blockchain files. Usually it is `~ / .bdcash`. It is essential to successfully start the bootstrap file construction process.
+ - **DATAFOLDER**: Path pointing to the folder containing the BdcashProtocol  blockchain files. Usually it is `~ / .bdcashprotocol`. It is essential to successfully start the bootstrap file construction process.
  - **NODE_KEY**: It is the private key that identifies the NodeSH. It is used to sign requests made from the outside and communicate with the P2P network.
- - **ADMIN_PUBKEY**: It is the public key that identifies the NodeSH within the NodeSH network. To be used if you want to connect your NodeSH to the official Bdcash network.
+ - **ADMIN_PUBKEY**: It is the public key that identifies the NodeSH within the NodeSH network. To be used if you want to connect your NodeSH to the official BdcashProtocol  network.
 
 ## Installation example
 ### Running the installation script
@@ -47,13 +47,13 @@ Now we will ignore this message and proceed with the configuration of the files 
 
 Before starting the NodeSH, you must proceed with the configurations described above.
 
-Let's edit the bdcash.conf file with the `nano ~/.bdcash/bdcash.conf` command and modify the` rpcuser` and `rpcpassword` with values ​​of our choice, the ones below are just an example (it is always recommended to use strong passwords ):
+Let's edit the bdcashprotocol.conf file with the `nano ~/.bdcashprotocol/bdcashprotocol.conf` command and modify the` rpcuser` and `rpcpassword` with values ​​of our choice, the ones below are just an example (it is always recommended to use strong passwords ):
 
 ```
 rpcuser = YsmtF6bvBrY82Q
 rpcpassword = e43GkfCGMYaXsr
 ```
-Once we have edited and saved the bdcash.conf file, we modify the `.env` file with the` nano ~/bdcash-nodesh/.env` command.
+Once we have edited and saved the bdcashprotocol.conf file, we modify the `.env` file with the` nano ~/bdcash-nodesh/.env` command.
 <br>The parameters to be modified are:
 
 ```
@@ -66,7 +66,7 @@ ADMIN_PUBKEY = YourAdminPubKey
 
 The parameters `NODE_KEY` and` ADMIN_PUBKEY` correspond to the private key of the NodeSH and the respective public key, with which the validation requests will be signed.
 
-To obtain a private key (therefore also the public key), you can proceed in several methods, however we suggest using the Bdcash Wallet desktop. It is recommended * not * to use the same NodeSH wallet but an external wallet:
+To obtain a private key (therefore also the public key), you can proceed in several methods, however we suggest using the BdcashProtocol  Wallet desktop. It is recommended * not * to use the same NodeSH wallet but an external wallet:
 
 Open the debug console and type
 
@@ -123,8 +123,8 @@ npm start ### avvia il wallet provvisoriamente
 ```
 
 If we have configured everything correctly, after issuing the `npm start` command, we will get a result similar to this:
-Bdcash NodeSH listening at port 3001. Public IP is: 37.161.46.223
-BDCASH wallet successfully connected.
+BdcashProtocol  NodeSH listening at port 3001. Public IP is: 37.161.46.223
+BDECO wallet successfully connected.
 Database connected successfully.
 Starting database check.
 Collection settings created.
@@ -179,14 +179,14 @@ pm2 monit
 
 If you have not downloaded the bootstrap (ie if you have done a manual installation), the synchronization process can take several hours.
 <br> Bootstrap files can be used to speed up synchronization.
-<br> <br> **ATTENTION**: Bootstrap files are different for NodeSH and Bdcash wallet.
+<br> <br> **ATTENTION**: Bootstrap files are different for NodeSH and BdcashProtocol  wallet.
 
-### Download the bootstrap for the Scrpta wallet
+### Download the bootstrap for the BdcashProtocol wallet
 
-Bootstrapping the wallet will make the wallet synchronization process much faster. Through these commands it is possible to download it and synchronize the wallet with the latest bootstrap version available. These commands must be given inside the `.bdcash` folder, the same where you previously edited the` bdcash.conf` file.
+Bootstrapping the wallet will make the wallet synchronization process much faster. Through these commands it is possible to download it and synchronize the wallet with the latest bootstrap version available. These commands must be given inside the `.bdcashprotocol` folder, the same where you previously edited the` bdcashprotocol.conf` file.
 
 ```
-cd .bdcash
+cd .bdcashprotocol
 wget https://bootstraps.ihostmn.com/bigdatacash.tar.gz
 rm -rf blocks chainstate peers.dat
 tar -xvzf bigdatacash.tar.gz

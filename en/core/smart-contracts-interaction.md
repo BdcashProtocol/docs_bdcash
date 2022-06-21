@@ -12,10 +12,10 @@ This method is used to generate a request to a smart contract. Requires you to s
 Here is an example of how to use it:
 
 ```
-const ScryptaCore = require('@scrypta/core')
-const scrypta = new ScryptaCore
-let address = await scrypta.createAddress('MyPassword')
-let request = await scrypta.createContractRequest(address.walletstore, 'MyPassword', { contract: "LgSAtP3gPURByanZSM32kfEu9C1uyQ6Kfg", function: "search", params: {contract: "LcD7AGaY74xvVxDg3NkKjfP6QpG8Pmxpnu", version: "latest"} })
+const BDCashCore = require('@bdcash/core')
+const bdcash = new BDCashCore
+let address = await bdcash.createAddress('MyPassword')
+let request = await bdcash.createContractRequest(address.walletstore, 'MyPassword', { contract: "LgSAtP3gPURByanZSM32kfEu9C1uyQ6Kfg", function: "search", params: {contract: "LcD7AGaY74xvVxDg3NkKjfP6QpG8Pmxpnu", version: "latest"} })
 ```
 
 The response will look like this:
@@ -29,7 +29,7 @@ The response will look like this:
 This method sends the request to the first available IdaNode and returns the result. After creating the request, you can send it directly with:
 
 ```
-let response = await scrypta.sendContractRequest(request)
+let response = await bdcash.sendContractRequest(request)
 ```
 
 The answer will be present in the variable.

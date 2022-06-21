@@ -1,10 +1,10 @@
 # Introduction
 
-[**Scrypta Core**](https://github.com/scryptachain/scrypta-core), as anticipated in the introductory chapters, it is the Javascript library that is the basis of the interactions on the client side (therefore user side) and performs, locally - or without consulting external servers - all the functions necessary for managing addresses and transactions.
+[**BdcashProtocol Core**](https://github.com/scryptachain/bdcash-core), as anticipated in the introductory chapters, it is the Javascript library that is the basis of the interactions on the client side (therefore user side) and performs, locally - or without consulting external servers - all the functions necessary for managing addresses and transactions.
 
 ##  SID File
 
-The Scrypta Core library NEVER saves private keys in the clear and uses them only "on the fly", after the user has unlocked his identity payload. This payload, which we will mention several times, is an encrypted string through the AES-256 protocol and is commonly saved in files with the extension **.sid (Scrypta ID)**.
+The BdcashProtocol Core library NEVER saves private keys in the clear and uses them only "on the fly", after the user has unlocked his identity payload. This payload, which we will mention several times, is an encrypted string through the AES-256 protocol and is commonly saved in files with the extension **.sid (BdcashProtocol ID)**.
 
 The password with which the key is encrypted is NEVER saved in the clear. We ask developers to follow these simple rules, which guarantee a first, but essential, security barrier to the unauthorized use of addresses.
 
@@ -12,21 +12,21 @@ The local management of the .sid files takes place by default through the localS
 
 ## To start
 
-The Scrypta Core library connects the client with one of the available Scrypta IdANodes. However, these nodes can be customized and overwritten during the initialisation phase so as to use a set of personalized IdANodes, recommended especially during the production phase of a dApp.
+The BdcashProtocol Core library connects the client with one of the available BdcashProtocol IdANodes. However, these nodes can be customized and overwritten during the initialisation phase so as to use a set of personalized IdANodes, recommended especially during the production phase of a dApp.
 
 In this section we will analyze in depth the functioning of each single method inside the library. The library must be inserted into webpacks or other compilers to use it within a web page, or it can be called directly from NodeJS simply by installing it with:
 
 ```
-npm install --save @scrypta/core
+npm install --save @bdcash/core
 ```
 
 Once installed it must be inserted into the javascript script and initialized. Note that it is important to initialize it with the `true` parameter when used in the browser. This setting allows the library to use localStorage instead of the File System.
 
 ```
-const ScryptaCore = require('@scrypta/core')
-let scrypta = new ScryptaCore(true)
+const BDCashCore = require('@bdcash/core')
+let bdcash = new BDCashCore(true)
 
-let address =  await scrypta.createAddress('AStrongPassword')
+let address =  await bdcash.createAddress('AStrongPassword')
 
 /*
 
@@ -49,12 +49,12 @@ let address =  await scrypta.createAddress('AStrongPassword')
 
 ## Working with the testnet
 
-To work with the Scrypta testnet you need to set the `testnet = true` parameter immediately after initializing it:
+To work with the BdcashProtocol testnet you need to set the `testnet = true` parameter immediately after initializing it:
 
 ```
-const ScryptaCore = require('@scrypta/core')
-let scrypta = new ScryptaCore(true)
-scrypta.testnet = true
+const BDCashCore = require('@bdcash/core')
+let bdcash = new BDCashCore(true)
+bdcash.testnet = true
 ```
 
 From now on both addresses and IdANodes will be testnet.
@@ -63,9 +63,9 @@ From now on both addresses and IdANodes will be testnet.
 
 To test the library locally you must have installed NodeJS and GIT, below the list of commands necessary to start the test web interface:
 ```
-git clone https://github.com/scryptachain/scrypta-core
+git clone https://github.com/scryptachain/bdcash-core
 
-cd scrypta-core
+cd bdcash-core
 
 npm  install
 

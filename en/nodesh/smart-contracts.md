@@ -2,11 +2,11 @@
 
 To get a general overview of how Smart Contracts work, read the [initial guide] (/smart-contracts).
 
-Below are the endpoints enabled within the IdaNode to interact with BDCash Smart Contracts.
+Below are the endpoints enabled within the IdaNode to interact with BdcashProtocol  Smart Contracts.
 
 ## [GET] /contracts
 
-This endpoint returns all the contracts published within the BDCash network and the related Javascript codes that can be publicly consulted, as they are executed, updated to the latest version available.
+This endpoint returns all the contracts published within the BdcashProtocol  network and the related Javascript codes that can be publicly consulted, as they are executed, updated to the latest version available.
 
 It is important to understand that the code shown is already `compiled`, ie some code is added
 
@@ -18,21 +18,21 @@ This endpoint returns a single contract, the response will be like:
 ```
 {
     "v": 1,
-    "name": "BDCASH NEWS FEED MANAGER",
-    "author": "BDCASH TASK FORCE",
+    "name": "BDECO NEWS FEED MANAGER",
+    "author": "BDECO TASK FORCE",
     "version": "1.0.0",
     "description": "THIS feed WILL MANAGE ALL THE FEEDS RETURNING A COMPLETE LIST",
     "immutable": "false",
     "code": "const BDCashCore = require('@bdcash-protocol/core'); const db = require('db'); const axios = require('axios');const bdcash = new BDCashCore; bdcash.staticnodes = true;bdcash.mainnetNodeshs = ['http://localhost:3001']; bdcash.testnetNodeshs = ['http://localhost:3001'];/**
-	 * NAME: BDCASH NEWS FEED MANAGER
+	 * NAME: BDECO NEWS FEED MANAGER
 	 * DESCRIPTION: THIS feed WILL MANAGE ALL THE FEEDS RETURNING A COMPLETE LIST
-	 * AUTHOR: BDCASH TASK FORCE
+	 * AUTHOR: BDECO TASK FORCE
 	 * VERSION: 1.0.0
 	 * IMMUTABLE: false
 	 */
 	
 	// DEFINING COMPILER VERSION
-	/* BDCash v0.0.1 */
+	/* BdcashProtocol  v0.0.1 */
 	
 	async function constructor() {
 
@@ -185,7 +185,7 @@ The call will look like this:
 }
 ```
 
-This endpoint will produce a blockchain write, it is therefore necessary to have a minimum of 100 BDCASH within the node address.
+This endpoint will produce a blockchain write, it is therefore necessary to have a minimum of 100 BDECO within the node address.
 
 ## [POST] /contracts/unpin
 

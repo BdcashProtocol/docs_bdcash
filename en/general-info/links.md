@@ -28,9 +28,3 @@
 [![CoinGecko](https://img.shields.io/static/v1?label=CoinGecko&message=Check&color=green)](https://coingecko.com/coins/bigdata-cash/) 
 
 [![Coinpaprika](https://img.shields.io/static/v1?label=Coinpaprika&message=Join&color=red)](https://coinpaprika.com/coin/bdcash-bdcash/) 
-
-[![Coinlore](https://img.shields.io/static/v1?label=Coinlore&message=Join&color=9cf)](https://www.coinlore.com/coin/bdcash)
-
-[![Coinlib](https://img.shields.io/static/v1?label=Coinlib&message=Join&color=Blueblack)](https://coinlib.io/coin/BDCASH/BigDataCash/) 
-
-[![LivecoinWatch](https://img.shields.io/static/v1?label=LivecoinWatch&message=Join&color=greenblack)](https://www.livecoinwatch.com/price/Bdcash-BDCASH) 

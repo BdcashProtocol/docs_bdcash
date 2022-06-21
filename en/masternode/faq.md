@@ -1,21 +1,21 @@
 # Masternode FAQ
 
-**Q: HOW MANY LYRA COINS ARE NEEDED FOR A MASTERNODE, AND HOW DO I DEVELOP IT?**
+**Q: HOW MANY BDECO COINS ARE NEEDED FOR A MASTERNODE, AND HOW DO I DEVELOP IT?**
 
-A: You will need a total of 5000 BDCASH. Follow this setup guide.
+A: You will need a total of 5000 BDECO. Follow this setup guide.
 
 **Q: WHAT IS A SHARED MASTERNODE AND HOW CAN I ACCESS IT?**
 
-A: Through specific services, users can group their funds to reach the 5,000 BDCASH required to manage a masternode.
+A: Through specific services, users can group their funds to reach the 2500 BDECO required to manage a masternode.
 
-Shared masternodes are based on trust in the service operator. The Scrypta team recommends using extreme caution when participating in a shared masternode group.
-The platforms that allow you to participate in "share" of Masternode BDCash are:
+Shared masternodes are based on trust in the service operator. The BdcashProtocol team recommends using extreme caution when participating in a shared masternode group.
+The platforms that allow you to participate in "share" of Masternode BdcashProtocol  are:
 
 [Ihostmn](#)
 
 [Rapids Host](#)
 
-**Q: HOW MUCH IS IT POSSIBLE TO EARN FROM A MASTERODE BDCASH?**
+**Q: HOW MUCH IS IT POSSIBLE TO EARN FROM A MASTERODE BDECO?**
 
 A: The profits of a Masternode vary according to the value of the coin, the percentage of rewards obtained by the nodes and how many nodes are online. There are specific platforms that provide this data in real time:
 
@@ -31,7 +31,7 @@ The first Masternode reward can take up to 24 times more than the average reward
 
 The average reward time can be checked on masternode statistical sites such as [Masternodes Online](#).
 
-**Q: IF MY MASTERODE GENKEY WAS STOLEN FROM ME, COULD SOMEONE STOLEN MY BDCASH ?**
+**Q: IF MY MASTERODE GENKEY WAS STOLEN FROM ME, COULD SOMEONE STOLEN MY BDECO ?**
 
 A: No, they can't steal your coins directly. However, they can use it to disable your masternode, effectively stopping the network flow.
 

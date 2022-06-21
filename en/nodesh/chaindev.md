@@ -1,10 +1,10 @@
 # Chain Dev Platform
 
-The Scrypta Sidechain protocol is described in the appropriate section. In this section we will show how to interact with Sidechains through the IdANode enpoints.
+The BdcashProtocol Sidechain protocol is described in the appropriate section. In this section we will show how to interact with Sidechains through the IdANode enpoints.
 
 ## [POST] /sidechain/issue
 
-This endpoint is used to create a Sidechain, the internal processes of which are described in the "Issuance" chapter of the dedicated section. We recommend creating a new personal address directly from Web Wallet, so that we can manage the tokens via the graphical interface. It is required to have at least **100 BDCASH** in the balance of the address, otherwise the creation will not be successful.
+This endpoint is used to create a Sidechain, the internal processes of which are described in the "Issuance" chapter of the dedicated section. We recommend creating a new personal address directly from Web Wallet, so that we can manage the tokens via the graphical interface. It is required to have at least **100 BDECO** in the balance of the address, otherwise the creation will not be successful.
 
 Here are the data fields to use to create a new Sidechain:
 - **dapp_address**: the owner address of the sidechain
@@ -103,7 +103,7 @@ The answer is very similar to that of writing any other data:
 
 This operation allows you to view your balance at a specific sidechain. The following fields must be sent:
 
-- **dapp_address**: the Lyra address you want to inspect
+- **dapp_address**: the BdcashProtocol address you want to inspect
 - **sidechain_address**: address to sidechain.
 
 The answer will be similar to the following:
@@ -147,7 +147,7 @@ The answer will look like this:
 It allows you to view transactions made from an address at a specific sidechain. The following fields must be sent:
 The answer will look like this:
 
-- **dapp_address**: the LYRA address you want to inspect
+- **dapp_address**: the BDECO address you want to inspect
 - **sidechain_address**: the address of the sidechain.
 
 The answer will look like this:
@@ -212,7 +212,7 @@ The answer will look like this:
 
 It allows you to view spendable transactions (**USXO**) from an address at a specific sidechain. The following fields must be sent:
 
-- **dapp_address**: the Lyra address you want to inspect
+- **dapp_address**: the BdcashProtocol address you want to inspect
 - **sidechain_address**: the address of the sidechain.
 
 Answer example:
@@ -248,7 +248,7 @@ Answer example:
 
 It allows you to view all the sidechains with balance for a specific address.
 
-- **dapp_address**: the Bdcash address you want to inspect
+- **dapp_address**: the BdcashProtocol  address you want to inspect
 
 The answer will look something like this:
 ```
@@ -276,7 +276,7 @@ The answer will look something like this:
 
 ## [GET] /sidechain/list
 
-It allows you to view all the sidechains created and valid within the Scrypta network.
+It allows you to view all the sidechains created and valid within the BdcashProtocol network.
 
 Answer example:
 ```
@@ -288,7 +288,7 @@ Answer example:
 
 			"genesis":  {
 
-			"name":  "BDCash USD",
+			"name":  "BdcashProtocol  USD",
 
 			"supply":  100000,
 
@@ -322,7 +322,7 @@ Answer example:
 
 		"genesis":  {
 
-			"name":  "BDCash Bitcoin",
+			"name":  "BdcashProtocol  Bitcoin",
 
 			"supply":  1,
 
@@ -626,7 +626,7 @@ For example calling `/sidechain/check/8ShzCp8oXAqVSZdrkNMSj13ghobwZZRzGm/true` w
     ],
     "verified": true,
     "sidechain": {
-        "name": "Bdcash BTC",
+        "name": "BdcashProtocol  BTC",
         "supply": 10000,
         "symbol": "BDBTC",
         "decimals": 8,

@@ -10,15 +10,15 @@
 > The ScryptaID Login Module code is verified (and verifiable) in blockchain thanks to the blockchain versioning tool.
 
 
-Recall that ScryptaID Login Module is an open-source software, the repository can be inspected at the [following link](https://github.com/scryptachain/scrypta-login).
+Recall that ScryptaID Login Module is an open-source software, the repository can be inspected at the [following link](https://github.com/scryptachain/bdcash-login).
 
 ### Test
 Here is a simple test page to test the functioning of the module:
-[https://scryptachain.github.io/scrypta-login/](https://scryptachain.github.io/scrypta-login/)
+[https://scryptachain.github.io/bdcash-login/](https://scryptachain.github.io/bdcash-login/)
 
 ## Main Features
 
-This tool is useful if you need to easily implement a login system with Scrypta. By default the tool produces an UI where the user can enter with:
+This tool is useful if you need to easily implement a login system with BdcashProtocol. By default the tool produces an UI where the user can enter with:
 
 - Manent App: by usign the remote signing tool
 - Sid File: manually import previoysly stored .sid file
@@ -28,10 +28,10 @@ You can even choose what kind of identities the user must have so you can recogn
 
 ## How to use it
 
-First of all you need to include it in your project by including the `scrypta.login.min.js` file like:
+First of all you need to include it in your project by including the `bdcash.login.min.js` file like:
 
 ```
-<script src="./scrypta.login.min.js"></script>
+<script src="./bdcash.login.min.js"></script>
 ```
 
 You can even use the IPFS version, the hash is: `Qmf8VEsWNnYP9KSV4FybEKPqxeiAG6eWyWo63USfmqkybY` like this:
@@ -43,7 +43,7 @@ You can even use the IPFS version, the hash is: `Qmf8VEsWNnYP9KSV4FybEKPqxeiAG6e
 Then you need to write the rendering html, where you want to render the button:
 
 ```
-<div id="scrypta-login" dapp="Demo dApp" callback="testCallback" required="phone"></div>
+<div id="bdcash-login" dapp="Demo dApp" callback="testCallback" required="phone"></div>
 ```
 
 You can customize the login process by including these attributes:
@@ -58,11 +58,11 @@ If you want to test it you can simply download the package with `git clone`, ins
 
 ## Check the integrity with the blockchain
 
-If you need to check the integrity of the file please use `scrypta-bvc` tool as documented here: [https://github.com/scryptachain/scrypta-blockchain-versioning-cli](https://github.com/scryptachain/scrypta-blockchain-versioning-cli).
+If you need to check the integrity of the file please use `bdcash-bvc` tool as documented here: [https://github.com/scryptachain/bdcash-blockchain-versioning-cli](https://github.com/scryptachain/bdcash-blockchain-versioning-cli).
 
 All the updates will be uploaded at [https://proof.scryptachain.org/#/address/LiRXTmP4fe8Q3C3c9VtzzPHaxhMWnVRpTh](https://proof.scryptachain.org/#/address/LiRXTmP4fe8Q3C3c9VtzzPHaxhMWnVRpTh)
 
 ## Demo page
 
 Check out this link to run a simple demo, available even at `webpack/dist/index.html`: 
-[https://scryptachain.github.io/scrypta-login/](https://scryptachain.github.io/scrypta-login/)
+[https://scryptachain.github.io/bdcash-login/](https://scryptachain.github.io/bdcash-login/)

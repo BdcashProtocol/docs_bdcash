@@ -46,11 +46,11 @@ This method is used to derive an address starting from a certain seed. The seed 
 
 Here is a complete example:
 ```
-const ScryptaCore = require('@scrypta/core')
-const scrypta = new ScryptaCore
+const BDCashCore = require('@bdcash/core')
+const bdcash = new BDCashCore
 
-scrypta.buildxSid('YourAwesomePassword', 'latin', false).then(async response => {
-    let derived = await scrypta.deriveKeyFromSeed(response.seed, 'm/0')
+bdcash.buildxSid('YourAwesomePassword', 'latin', false).then(async response => {
+    let derived = await bdcash.deriveKeyFromSeed(response.seed, 'm/0')
     console.log(derived)
 })
 ```
@@ -95,14 +95,14 @@ The `hardened` parameter will cause it to return a key that is `hardened` which 
 Here is a concrete example:
 
 ```
-const ScryptaCore = require('@scrypta/core')
-const scrypta = new ScryptaCore
+const BDCashCore = require('@bdcash/core')
+const bdcash = new BDCashCore
 
-scrypta.buildxSid('YourAwesomePassword', 'latin', false).then(async response => {
+bdcash.buildxSid('YourAwesomePassword', 'latin', false).then(async response => {
     let information = 'MyUniqueAndImportantInformation'
-    let hash = await scrypta.hash(information)
-    let index = await scrypta.hashtopath(hash)
-    let derived = await scrypta.deriveKeyFromSeed(response.seed, index)
+    let hash = await bdcash.hash(information)
+    let index = await bdcash.hashtopath(hash)
+    let derived = await bdcash.deriveKeyFromSeed(response.seed, index)
     console.log(derived)
 })
 ```

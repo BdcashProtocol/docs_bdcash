@@ -10,7 +10,7 @@ If we have NodeJS we can proceed to install the requirements:
 
 - NOdeSH: https://github.com/BdcashProtocol/bdcash-nodesh
 
-### Install ScryptaVM
+### Install #BDCashProtocol VM
 
 The following command will globally install the virtual machine, make sure you have permission to do so with `sudo` or its equivalent:
 

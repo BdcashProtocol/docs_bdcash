@@ -2,7 +2,7 @@
 
 Block explorer features are mainly used by dApps and clients to create transactions. Some of these calls can also be used to analyze the staking of an address or a masternode. Having a constantly updated block explorer is essential for creating working dApps. Without this it would not be possible to create transactions.
 
-It is important to remember that the main library (BDCash Core) does not keep track of all these transactions in the device, but only those **not** confirmed. These are kept in the device cache only between the emission of one block and another.
+It is important to remember that the main library (BdcashProtocol  Core) does not keep track of all these transactions in the device, but only those **not** confirmed. These are kept in the device cache only between the emission of one block and another.
 
 
 ## [GET] /lastblock 

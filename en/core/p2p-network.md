@@ -9,16 +9,16 @@ This method allows you to connect to the network and receive any messages receiv
 ```
 // FIRST WE CREATE A NEW ADDRESS
 let password = 'ASuperStrongPassword'
-let address = await scrypta.createAddress(password, true)
+let address = await bdcash.createAddress(password, true)
 
 // CONNECT TO THE NETWORK
-scrypta.connectP2P(address.walletstore, password, function(received){
+bdcash.connectP2P(address.walletstore, password, function(received){
     response(received)
 })
 
 // SEND A MESSAGE TO THE NETWORK
 setTimeout(function(){
-    scrypta.broadcast(address.walletstore, password, 'message', 'Now are '+ new Date() +'!')
+    bdcash.broadcast(address.walletstore, password, 'message', 'Now are '+ new Date() +'!')
 },3500)
 ```
 

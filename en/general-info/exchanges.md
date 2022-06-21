@@ -9,31 +9,18 @@ The exchanges can also be further divided into two categories: exchanges that ac
 For security reasons, exchanges should not be used as electronic wallets. Exchanges are for trading, not for storing cryptocurrencies.
 
 
-It is currently possible to exchange BDCASH:
+It is currently possible to exchange BDECO:
 
 ##  Crex24-Exchange:
-https://crex24.com/exchange/BDCASH-BTC 
+https://crex24.com/exchange/BDECO-BTC 
 
 ## Bololex-Exchange:
-BDCASH/TKM: https://bololex.com/trading/?symbol=BDCASH-TKM
+BDECO/TRX: https://bololex.com/trading/?symbol=BDECO-TRX
 
-BDCASH/DOGE: https://bololex.com/trading/?symbol=BDCASH-DOGE
+BDECO/USDT: https://bololex.com/trading/?symbol=BDECO-USDT
 
-BDCASH/BOLO: https://bololex.com/trading/?symbol=BDCASH-BOLO
+BDECO/BOLO: https://bololex.com/trading/?symbol=BDECO-BOLO
 
-## Bitstorage-Exchange:
-BDCASH/USDT: https://bitstorage.finance/market/BDCASH-USDT
+## Market Ihostmn
 
-BDCASH/ETH: https://bitstorage.finance/market/BDCASH-ETH
-
-BDCASH/BTC: https://bitstorage.finance/market/BDCASH-BTC
-
-## Assets-Exchange:
-BDCASH/BTC:   https://exchange-assets.com/en/?market=bdcash_btc  
-
-BDCASH/S11:   https://exchange-assets.com/en/?market=bdcash_usdt 
-
-BDCASH/S11:   https://exchange-assets.com/en/?market=bdcash_s11 
-
-## BitSails-Exchange:
-BDCASH/BTC: https://www.bitsails.com/market?MarketName=BTC-BDCASH
+BDECO/BTC : https://ihostmn.com/sharemn.php?id=211

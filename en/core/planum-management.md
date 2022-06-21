@@ -4,18 +4,18 @@ This section will describe how to use Planum technology, i.e. how to manage tran
 
 ## usePlanum(sidechain)
 
-The first thing to do to operate with Planum and ScryptaCore technology is to choose the reference sidechain, so that the instance knows where to get the data.
+The first thing to do to operate with Planum and BDCashCore technology is to choose the reference sidechain, so that the instance knows where to get the data.
 
 We then choose the sidechain with which we want to operate, for example:`6Kk2jkJ76wjZiBvDr6j1R9Ub9z9TWXBK18`
 
 ```
-const scrypta = new ScryptaCore
-scrypta.usePlanum('6Kk2jkJ76wjZiBvDr6j1R9Ub9z9TWXBK18')
+const bdcash = new BDCashCore
+bdcash.usePlanum('6Kk2jkJ76wjZiBvDr6j1R9Ub9z9TWXBK18')
 ```
 
 ## verifyPlanum()
 
-It allows you to check the status and consent of a sidechain within the established network. It is recommended to use this feature in conjunction with `scrypta.staticnodes = true` as requesting consent from an extended network can be a lengthy operation. Setting the `staticnodes` property to` true` prompts the client to connect only to the `mainnetIdaNodes` or` testnetIdaNodes` nodes. By default `idanodejs01 ... 06`.
+It allows you to check the status and consent of a sidechain within the established network. It is recommended to use this feature in conjunction with `bdcash.staticnodes = true` as requesting consent from an extended network can be a lengthy operation. Setting the `staticnodes` property to` true` prompts the client to connect only to the `mainnetIdaNodes` or` testnetIdaNodes` nodes. By default `idanodejs01 ... 06`.
 
 ## listPlanumUnspent(address, safe = false)
 

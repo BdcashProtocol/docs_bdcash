@@ -1,12 +1,12 @@
-#Wallet BDCash
+#Wallet BdcashProtocol 
 
-BDCash has different types of wallets: hardware, mobile and desktop.
+BdcashProtocol  has different types of wallets: hardware, mobile and desktop.
 
-If you are looking for a simple and safe way to keep your BDCASH.
+If you are looking for a simple and safe way to keep your BDECO.
 
-Mobile and web, on the other hand, are the perfect solution for those looking for ease of use and advanced functions. In this case we recommend using [Wallet BDCASH](#), available in Web/Estension and APP (Android) format.
+Mobile and web, on the other hand, are the perfect solution for those looking for ease of use and advanced functions. In this case we recommend using [Wallet BDECO](#), available in Web/Estension and APP (Android) format.
 
-In this section you will find guides and details of all BDCash wallets.
+In this section you will find guides and details of all BdcashProtocol  wallets.
 
 ## Mobile e Web Wallet
 
